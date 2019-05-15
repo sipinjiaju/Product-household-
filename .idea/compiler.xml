@@ -9,8 +9,5 @@
         <module name="sipinhome" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="sipinhome" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
