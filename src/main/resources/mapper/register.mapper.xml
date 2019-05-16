@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qianfeng.sipinhome.user.dao.RegisterMapper">
+
+    <resultMap id="baseResult" type="com.qianfeng.sipinhome.user.bean.User">
+        <id property="id" column="id" javaType="java.lang.Long"/>
+        <result property="phone" column="phone" javaType="java.lang.String"/>
+        <result property="password" column="password" javaType="java.lang.String"/>
+    </resultMap>
+    <insert id="registerUser">
+        insert into user(phone,password) values (#{phone},#{password})
+    </insert>
+</mapper>
