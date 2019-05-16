@@ -1,7 +1,8 @@
 package com.qianfeng.sipinhome.bedroom.list.dto;
 
-public class badroom {
+public class bedroom {
     private int id;
+    private String name;
 
     public int getId() {
         return id;
@@ -9,5 +10,13 @@ public class badroom {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }
