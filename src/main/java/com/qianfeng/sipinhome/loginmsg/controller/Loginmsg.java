@@ -22,6 +22,7 @@ public class Loginmsg {
         try {
             //生成6位验证码
             String verifyCode = String.valueOf(new Random().nextInt(899999) + 100000);
+            //调用平台接口
             ZhenziSmsClient client = new ZhenziSmsClient("https://sms_developer.zhenzikj.com","101569","292573e4-dd21-4a94-867a-fa7c65bd89b6");
             String result=client.send(phonenum,"你的验证码为"+verifyCode);
             resultVO.setCode(0);
@@ -41,6 +42,7 @@ public class Loginmsg {
 
            try{
                String verifyCode1 = resultVO.getVerifyCode();
+               //进行验证码 手机号 验证
             if(verifyCode1.equals(verifyCode)){
                User user = loginmsgService.querybytel(phonenum);
                System.out.println(user.getPhone());
