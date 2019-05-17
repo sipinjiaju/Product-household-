@@ -865,14 +865,14 @@
     <table id="240" parent="13" name="status"/>
     <table id="241" parent="13" name="tv_size"/>
     <table id="242" parent="13" name="user"/>
-    <column id="243" parent="212" name="id">
+    <column id="243" parent="212" name="a_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="244" parent="212" name="name">
+    <column id="244" parent="212" name="a_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
@@ -909,17 +909,17 @@
     </column>
     <key id="251" parent="212" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>a_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="252" parent="213" name="id">
+    <column id="252" parent="213" name="bed_goods_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="253" parent="213" name="name">
+    <column id="253" parent="213" name="bed_goods_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
@@ -931,10 +931,10 @@
     </column>
     <key id="255" parent="213" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>bed_goods_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="256" parent="214" name="id">
+    <column id="256" parent="214" name="bedmiddle_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1033,51 +1033,51 @@
     </column>
     <key id="275" parent="214" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>bedmiddle_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="276" parent="215" name="id">
+    <column id="276" parent="215" name="bed_size_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="277" parent="215" name="name">
+    <column id="277" parent="215" name="bed_size_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="278" parent="215" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>bed_size_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="279" parent="216" name="id">
+    <column id="279" parent="216" name="bed_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="280" parent="216" name="name">
+    <column id="280" parent="216" name="bed_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="281" parent="216" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>bed_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="282" parent="217" name="id">
+    <column id="282" parent="217" name="book_goods_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="283" parent="217" name="name">
+    <column id="283" parent="217" name="book_goods_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
@@ -1089,10 +1089,10 @@
     </column>
     <key id="285" parent="217" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>book_goods_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="286" parent="218" name="id">
+    <column id="286" parent="218" name="book_middle_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1176,85 +1176,85 @@
     </column>
     <key id="302" parent="218" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>book_middle_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="303" parent="219" name="id">
+    <column id="303" parent="219" name="book_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="304" parent="219" name="name">
+    <column id="304" parent="219" name="book_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="305" parent="219" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>book_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="306" parent="220" name="id">
+    <column id="306" parent="220" name="chair_type_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="307" parent="220" name="name">
+    <column id="307" parent="220" name="chair_type_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="308" parent="220" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>chair_type_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="309" parent="221" name="id">
+    <column id="309" parent="221" name="color_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="310" parent="221" name="name">
+    <column id="310" parent="221" name="color_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="311" parent="221" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>color_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="312" parent="222" name="id">
+    <column id="312" parent="222" name="ctable_type_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="313" parent="222" name="name">
+    <column id="313" parent="222" name="ctable_type_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="314" parent="222" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>ctable_type_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="315" parent="223" name="id">
+    <column id="315" parent="223" name="dining_goods_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="316" parent="223" name="name">
+    <column id="316" parent="223" name="dining_goods_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
@@ -1266,10 +1266,10 @@
     </column>
     <key id="318" parent="223" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>dining_goods_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="319" parent="224" name="id">
+    <column id="319" parent="224" name="dining_middle_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1353,102 +1353,102 @@
     </column>
     <key id="335" parent="224" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>dining_middle_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="336" parent="225" name="id">
+    <column id="336" parent="225" name="dining_table_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="337" parent="225" name="name">
+    <column id="337" parent="225" name="dining_table_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="338" parent="225" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>dining_table_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="339" parent="226" name="id">
+    <column id="339" parent="226" name="dining_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="340" parent="226" name="name">
+    <column id="340" parent="226" name="dining_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="341" parent="226" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>dining_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="342" parent="227" name="id">
+    <column id="342" parent="227" name="door_num_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="343" parent="227" name="name">
+    <column id="343" parent="227" name="door_num_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="344" parent="227" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>door_num_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="345" parent="228" name="id">
+    <column id="345" parent="228" name="gallery_size_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="346" parent="228" name="name">
+    <column id="346" parent="228" name="gallery_size_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="347" parent="228" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>gallery_size_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="348" parent="229" name="id">
+    <column id="348" parent="229" name="locker_type_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="349" parent="229" name="name">
+    <column id="349" parent="229" name="locker_type_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="350" parent="229" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>locker_type_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="351" parent="230" name="id">
+    <column id="351" parent="230" name="lving_goods_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="352" parent="230" name="name">
+    <column id="352" parent="230" name="lving_goods_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
@@ -1460,10 +1460,10 @@
     </column>
     <key id="354" parent="230" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>lving_goods_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="355" parent="231" name="id">
+    <column id="355" parent="231" name="lving_middle_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1577,68 +1577,68 @@
     </column>
     <key id="377" parent="231" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>lving_middle_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="378" parent="232" name="id">
+    <column id="378" parent="232" name="lving_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="379" parent="232" name="name">
+    <column id="379" parent="232" name="lving_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="380" parent="232" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>lving_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="381" parent="233" name="id">
+    <column id="381" parent="233" name="margin_size_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="382" parent="233" name="name">
+    <column id="382" parent="233" name="margin_size_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="383" parent="233" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>margin_size_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="384" parent="234" name="id">
+    <column id="384" parent="234" name="mattress_size_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="385" parent="234" name="name">
+    <column id="385" parent="234" name="mattress_size_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="386" parent="234" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>mattress_size_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="387" parent="235" name="id">
+    <column id="387" parent="235" name="order_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="388" parent="235" name="num">
+    <column id="388" parent="235" name="order_num">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
@@ -1665,112 +1665,112 @@
     </column>
     <key id="393" parent="235" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>order_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="394" parent="236" name="id">
+    <column id="394" parent="236" name="shoe_size_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="395" parent="236" name="name">
+    <column id="395" parent="236" name="shoe_size_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="396" parent="236" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>shoe_size_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="397" parent="237" name="id">
+    <column id="397" parent="237" name="sofa_material_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="398" parent="237" name="name">
+    <column id="398" parent="237" name="sofa_material_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="399" parent="237" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>sofa_material_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="400" parent="238" name="id">
+    <column id="400" parent="238" name="sofa_size_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="401" parent="238" name="name">
+    <column id="401" parent="238" name="sofa_size_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="402" parent="238" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>sofa_size_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="403" parent="239" name="id">
+    <column id="403" parent="239" name="space_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="404" parent="239" name="name">
+    <column id="404" parent="239" name="space_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="405" parent="239" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>space_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="406" parent="240" name="id">
+    <column id="406" parent="240" name="status_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="407" parent="240" name="name">
+    <column id="407" parent="240" name="status_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="408" parent="240" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>status_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="409" parent="241" name="id">
+    <column id="409" parent="241" name="tv_size_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="410" parent="241" name="name">
+    <column id="410" parent="241" name="tv_size_name">
       <Position>2</Position>
       <DataType>varchar(255)|0s</DataType>
       <ColumnKind>normal</ColumnKind>
     </column>
     <key id="411" parent="241" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>tv_size_id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="412" parent="242" name="id">
+    <column id="412" parent="242" name="user_id">
       <Position>1</Position>
       <DataType>int(11)|0s</DataType>
       <NotNull>1</NotNull>
@@ -1809,7 +1809,7 @@
     </column>
     <key id="419" parent="242" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
-      <ColNames>id</ColNames>
+      <ColNames>user_id</ColNames>
       <Primary>1</Primary>
     </key>
   </database-model>

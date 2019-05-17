@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.space.bean;
 
 public class Space {
 
-  private long id;
-  private String name;
+  private long spaceId;
+  private String spaceName;
 
 
-  public long getId() {
-    return id;
+  public long getSpaceId() {
+    return spaceId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setSpaceId(long spaceId) {
+    this.spaceId = spaceId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getSpaceName() {
+    return spaceName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setSpaceName(String spaceName) {
+    this.spaceName = spaceName;
   }
 
 }

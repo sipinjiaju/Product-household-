@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.bedroom.bean;
 
 public class MattressSize {
 
-  private long id;
-  private String name;
+  private long mattressSizeId;
+  private String mattressSizeName;
 
 
-  public long getId() {
-    return id;
+  public long getMattressSizeId() {
+    return mattressSizeId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setMattressSizeId(long mattressSizeId) {
+    this.mattressSizeId = mattressSizeId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getMattressSizeName() {
+    return mattressSizeName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setMattressSizeName(String mattressSizeName) {
+    this.mattressSizeName = mattressSizeName;
   }
 
 }

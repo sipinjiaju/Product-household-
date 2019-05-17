@@ -3,7 +3,7 @@ package com.qianfeng.sipinhome.user.bean;
 
 public class User {
 
-  private long id;
+  private long userId;
   private String username;
   private String mail;
   private String phone;
@@ -12,12 +12,12 @@ public class User {
   private String password;
 
 
-  public long getId() {
-    return id;
+  public long getUserId() {
+    return userId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setUserId(long userId) {
+    this.userId = userId;
   }
 
 

@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.lvingroom.bean;
 
 public class ChairType {
 
-  private long id;
-  private String name;
+  private long chairTypeId;
+  private String chairTypeName;
 
 
-  public long getId() {
-    return id;
+  public long getChairTypeId() {
+    return chairTypeId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setChairTypeId(long chairTypeId) {
+    this.chairTypeId = chairTypeId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getChairTypeName() {
+    return chairTypeName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setChairTypeName(String chairTypeName) {
+    this.chairTypeName = chairTypeName;
   }
 
 }

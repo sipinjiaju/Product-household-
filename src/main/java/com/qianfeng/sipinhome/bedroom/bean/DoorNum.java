@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.bedroom.bean;
 
 public class DoorNum {
 
-  private long id;
-  private String name;
+  private long doorNumId;
+  private String doorNumName;
 
 
-  public long getId() {
-    return id;
+  public long getDoorNumId() {
+    return doorNumId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setDoorNumId(long doorNumId) {
+    this.doorNumId = doorNumId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getDoorNumName() {
+    return doorNumName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setDoorNumName(String doorNumName) {
+    this.doorNumName = doorNumName;
   }
 
 }

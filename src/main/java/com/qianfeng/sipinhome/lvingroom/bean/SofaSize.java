@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.lvingroom.bean;
 
 public class SofaSize {
 
-  private long id;
-  private String name;
+  private long sofaSizeId;
+  private String sofaSizeName;
 
 
-  public long getId() {
-    return id;
+  public long getSofaSizeId() {
+    return sofaSizeId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setSofaSizeId(long sofaSizeId) {
+    this.sofaSizeId = sofaSizeId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getSofaSizeName() {
+    return sofaSizeName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setSofaSizeName(String sofaSizeName) {
+    this.sofaSizeName = sofaSizeName;
   }
 
 }

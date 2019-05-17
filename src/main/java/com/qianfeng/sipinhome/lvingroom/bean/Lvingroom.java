@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.lvingroom.bean;
 
 public class Lvingroom {
 
-  private long id;
-  private String name;
+  private long lvingId;
+  private String lvingName;
 
 
-  public long getId() {
-    return id;
+  public long getLvingId() {
+    return lvingId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setLvingId(long lvingId) {
+    this.lvingId = lvingId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getLvingName() {
+    return lvingName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setLvingName(String lvingName) {
+    this.lvingName = lvingName;
   }
 
 }

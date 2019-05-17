@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.lvingroom.bean;
 
 public class ShoeSize {
 
-  private long id;
-  private String name;
+  private long shoeSizeId;
+  private String shoeSizeName;
 
 
-  public long getId() {
-    return id;
+  public long getShoeSizeId() {
+    return shoeSizeId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setShoeSizeId(long shoeSizeId) {
+    this.shoeSizeId = shoeSizeId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getShoeSizeName() {
+    return shoeSizeName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setShoeSizeName(String shoeSizeName) {
+    this.shoeSizeName = shoeSizeName;
   }
 
 }

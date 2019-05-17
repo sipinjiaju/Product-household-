@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.diningroom.bean;
 
 public class MarginSize {
 
-  private long id;
-  private String name;
+  private long marginSizeId;
+  private String marginSizeName;
 
 
-  public long getId() {
-    return id;
+  public long getMarginSizeId() {
+    return marginSizeId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setMarginSizeId(long marginSizeId) {
+    this.marginSizeId = marginSizeId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getMarginSizeName() {
+    return marginSizeName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setMarginSizeName(String marginSizeName) {
+    this.marginSizeName = marginSizeName;
   }
 
 }

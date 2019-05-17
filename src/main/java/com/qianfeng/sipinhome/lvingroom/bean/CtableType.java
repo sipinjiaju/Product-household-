@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.lvingroom.bean;
 
 public class CtableType {
 
-  private long id;
-  private String name;
+  private long ctableTypeId;
+  private String ctableTypeName;
 
 
-  public long getId() {
-    return id;
+  public long getCtableTypeId() {
+    return ctableTypeId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setCtableTypeId(long ctableTypeId) {
+    this.ctableTypeId = ctableTypeId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getCtableTypeName() {
+    return ctableTypeName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setCtableTypeName(String ctableTypeName) {
+    this.ctableTypeName = ctableTypeName;
   }
 
 }

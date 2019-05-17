@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.bedroom.bean;
 
 public class Bedroom {
 
-  private long id;
-  private String name;
+  private long bedId;
+  private String bedName;
 
 
-  public long getId() {
-    return id;
+  public long getBedId() {
+    return bedId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setBedId(long bedId) {
+    this.bedId = bedId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getBedName() {
+    return bedName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setBedName(String bedName) {
+    this.bedName = bedName;
   }
 
 }

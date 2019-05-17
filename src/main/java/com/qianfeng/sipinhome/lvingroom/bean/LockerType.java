@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.lvingroom.bean;
 
 public class LockerType {
 
-  private long id;
-  private String name;
+  private long lockerTypeId;
+  private String lockerTypeName;
 
 
-  public long getId() {
-    return id;
+  public long getLockerTypeId() {
+    return lockerTypeId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setLockerTypeId(long lockerTypeId) {
+    this.lockerTypeId = lockerTypeId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getLockerTypeName() {
+    return lockerTypeName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setLockerTypeName(String lockerTypeName) {
+    this.lockerTypeName = lockerTypeName;
   }
 
 }

@@ -2,9 +2,21 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="org.mybatis.example.BlogMapper">
+<mapper namespace="com.qianfeng.sipinhome.space.dao.SpaceMapper">
 
-    <resultMap id="baseResult" type="com.qianfeng.sipinhome.space">
-
+    <resultMap id="baseResult" type="com.qianfeng.sipinhome.space.dto.SpaceInspiration">
+        <id property="spaceId" column="space_id" javaType="java.lang.Long"/>
+        <result property="spaceName" column="space_name" javaType="java.lang.String"/>
+        <collection property="combos" ofType="com.qianfeng.sipinhome.space.dto.Combo">
+            <result property="priceMin" column="price_min" javaType="java.lang.Integer"/>
+            <result property="name" column="lving_goods_name" javaType="java.lang.String"/>
+            <result property="script" column="script" javaType="java.lang.String"/>
+        </collection>
     </resultMap>
+    <select id="query" resultMap="baseResult">
+        select lm.lving_middle_id,lm.price_min,lg.lving_goods_name,s.space_name,lm.script
+        from lving_middle lm join lving_goods lg join space s on
+        lm.lving_goods_id = lg.lving_goods_id and lm.space_id = s.space_id
+        where lm.space_id = 1;
+    </select>
 </mapper>

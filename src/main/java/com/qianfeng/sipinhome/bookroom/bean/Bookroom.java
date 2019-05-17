@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.bookroom.bean;
 
 public class Bookroom {
 
-  private long id;
-  private String name;
+  private long bookId;
+  private String bookName;
 
 
-  public long getId() {
-    return id;
+  public long getBookId() {
+    return bookId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setBookId(long bookId) {
+    this.bookId = bookId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getBookName() {
+    return bookName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setBookName(String bookName) {
+    this.bookName = bookName;
   }
 
 }

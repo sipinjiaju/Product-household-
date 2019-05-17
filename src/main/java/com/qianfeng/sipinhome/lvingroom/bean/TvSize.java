@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.lvingroom.bean;
 
 public class TvSize {
 
-  private long id;
-  private String name;
+  private long tvSizeId;
+  private String tvSizeName;
 
 
-  public long getId() {
-    return id;
+  public long getTvSizeId() {
+    return tvSizeId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setTvSizeId(long tvSizeId) {
+    this.tvSizeId = tvSizeId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getTvSizeName() {
+    return tvSizeName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setTvSizeName(String tvSizeName) {
+    this.tvSizeName = tvSizeName;
   }
 
 }

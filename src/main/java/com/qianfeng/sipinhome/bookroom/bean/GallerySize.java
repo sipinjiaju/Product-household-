@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.bookroom.bean;
 
 public class GallerySize {
 
-  private long id;
-  private String name;
+  private long gallerySizeId;
+  private String gallerySizeName;
 
 
-  public long getId() {
-    return id;
+  public long getGallerySizeId() {
+    return gallerySizeId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setGallerySizeId(long gallerySizeId) {
+    this.gallerySizeId = gallerySizeId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getGallerySizeName() {
+    return gallerySizeName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setGallerySizeName(String gallerySizeName) {
+    this.gallerySizeName = gallerySizeName;
   }
 
 }

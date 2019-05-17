@@ -3,25 +3,25 @@ package com.qianfeng.sipinhome.diningroom.bean;
 
 public class DiningTable {
 
-  private long id;
-  private String name;
+  private long diningTableId;
+  private String diningTableName;
 
 
-  public long getId() {
-    return id;
+  public long getDiningTableId() {
+    return diningTableId;
   }
 
-  public void setId(long id) {
-    this.id = id;
+  public void setDiningTableId(long diningTableId) {
+    this.diningTableId = diningTableId;
   }
 
 
-  public String getName() {
-    return name;
+  public String getDiningTableName() {
+    return diningTableName;
   }
 
-  public void setName(String name) {
-    this.name = name;
+  public void setDiningTableName(String diningTableName) {
+    this.diningTableName = diningTableName;
   }
 
 }
