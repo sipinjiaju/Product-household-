@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>会员登录</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        #fi{
+            width: 1200px;
+            height: 150px;
+            background: #fff;
+            margin: auto;
+        }
+        #fi1{
+            float: left;
+            width: 200px;
+            height: 100%;
+        }
+        #fi1 img{
+            width: 100%;
+            height: 100%
+        }
+        #fi2{
+            float: right;
+            width: 150px;
+            height: 100%;
+        }
+        #fi2 img{
+            width: 100%;
+            height: 100%;
+        }
+        #tw{
+            margin: auto;
+            width: 1200px;
+            height: 600px;
+            background-image: url();
+        }
+        #tws{
+            width: 400px;
+            height: 450px;
+            float: right;
+            background:#fff;
+            margin: 50px 50px 0px 50px;
+        }
+        #phone{
+            width: 300px;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: 30px;
+            border: 2px #ff809e solid;
+            border-radius: 5px;
+        }
+        #pwd{
+            width: 300px;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: 30px;
+            border: 2px #ff809e solid;
+            border-radius: 5px;
+        }
+        #code{
+            width: 200px;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: 30px;
+            border: 2px #ff809e solid;
+            border-radius: 5px;
+        }
+        #twa{
+            width: 300px;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: 30px;
+            border: 2px #ff809e solid;
+            border-radius: 5px;
+            background: #ff5384;
+        }
+        #ta{
+            margin-left: 30px;
+        }
+        #tb{
+            margin-left: 30px;
+            margin-top: 20px;
+            font-size: 15px;
+            font-family: 楷体;
+        }
+        #tb a{
+            text-decoration: none;
+
+        }
+        #tc{
+            margin-left: 240px;
+            margin-top: 20px;
+        }
+        #tc a{
+            text-decoration: none;
+            font-size: 15px;
+            font-family: 宋体;
+        }
+    </style>
+</head>
+<body>
+<div id="fi">
+    <div id="fi1">
+        <a href="#">
+            <img src="logo.jpg">
+        </a>
+    </div>
+    <div id="fi2">
+        <img src="call.png">
+    </div>
+</div>
+
+<div id="tw">
+    <div id="tws">
+        <h2 id="ta">会员登录</h2>
+        <form action="" method="post" onsubmit="return vip()" >
+            <input type="text" placeholder="手机号" id="phone"><br>
+            <input type="password" placeholder="密码" id="pwd"><br>
+            <input type="text" placeholder="验证码" id="code"><br>
+            <p id="tb"><input type="checkbox" name="reading">登录即表示同意<a href="#">《119婚庆网用户协议》</a></p>
+            <input type="submit" value="登录" id="twa">
+            <p id="tc"><a href="#">忘记密码</a>&nbsp;&nbsp;&nbsp;<a href="#">立即注册</a></p>
+        </form>
+        <script type="text/javascript">
+            function vip(){
+                var phone=document.getElementById("phone").value;
+                var pwd=document.getElementById("pwd").value;
+                var code=document.getElementById("code").value;
+                if (phone =="") {
+                    alert("手机号不能为空");
+                    return false;
+                }
+                if (pwd =="") {
+                    alert("密码不能为空");
+                    return false;
+                }
+                if (code =="") {
+                    alert("验证码不能为空");
+                    return false;
+                }
+                //判断手机格式
+                if (!/^1[356789]\d{9}$/.test(phone)) {
+                    alert("手机格式错误");
+                    return false;
+                }
+                if (!/^\w{6}$/.test(pwd)) {
+                    alert("密码格式错误");
+                    return false;
+                }
+                if (!/^[A-Za-z0-9]{4}$/.test(code)) {
+                    alert("验证码格式错误");
+                    return false;
+                }
+                return true;
+            }
+        </script>
+    </div>
+
+</div>
+
+</body>
+</html>

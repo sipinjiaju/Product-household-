@@ -1,6 +1,7 @@
 package com.qianfeng.sipinhome;
 
-import com.qianfeng.sipinhome.space.service.Impl.SpaceServiceImpl;
+import com.qianfeng.sipinhome.loginmsg.dto.User;
+import com.qianfeng.sipinhome.loginmsg.service.LoginmsgService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,14 +11,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class SipinhomeApplicationTests {
-
     @Autowired
-    private SpaceServiceImpl spaceService;
-
+    private LoginmsgService loginmsgService;
     @Test
     public void contextLoads() {
-//        List<SpaceInspiration1> spaceInspirations = spaceService.query();
-//        System.out.println(spaceInspirations);
+        User user = loginmsgService.querybytel("15927124596");
+        System.out.println(user.getPhone());
     }
 
 }
