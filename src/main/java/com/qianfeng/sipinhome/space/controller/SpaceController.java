@@ -18,6 +18,11 @@ public class SpaceController {
     @Autowired
     private ISpaceService spaceService;
 
+    /**
+     * 根据id查客厅类的套餐
+     * @param spaceId
+     * @return
+     */
     @RequestMapping("/queryLivingById/{spaceId}")
     @ResponseBody
     public List<SpaceInspiration1> queryLivingById(@PathVariable("spaceId") int spaceId){
@@ -25,6 +30,10 @@ public class SpaceController {
         return spaceInspirations;
     }
 
+    /**
+     * 查询所有的客厅类的套餐
+     * @return
+     */
     @RequestMapping("/queryLivingAll")
     @ResponseBody
     public List<SpaceInspiration1> queryLivingAll() {
@@ -32,6 +41,11 @@ public class SpaceController {
         return spaceInspirations;
     }
 
+    /**
+     * 根据id查卧室类的套餐
+     * @param spaceId
+     * @return
+     */
     @RequestMapping("/queryBedById/{spaceId}")
     @ResponseBody
     public List<SpaceInspiration2> queryBedById(@PathVariable("spaceId") int spaceId){
@@ -39,6 +53,10 @@ public class SpaceController {
         return spaceInspirations;
     }
 
+    /**
+     * 查询所有的卧室类的套餐
+     * @return
+     */
     @RequestMapping("/queryBedAll")
     @ResponseBody
     public List<SpaceInspiration2> queryBedAll() {
