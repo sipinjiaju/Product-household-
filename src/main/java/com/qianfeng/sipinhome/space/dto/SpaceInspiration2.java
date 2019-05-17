@@ -2,10 +2,11 @@ package com.qianfeng.sipinhome.space.dto;
 
 import java.util.List;
 
-public class SpaceInspiration {
+public class SpaceInspiration2 {
     private long spaceId;
     private String spaceName;
-    private List<Combo> combos;
+    private String pic;
+    private List<ComboBed> comboBeds;
 
     public long getSpaceId() {
         return spaceId;
@@ -23,11 +24,19 @@ public class SpaceInspiration {
         this.spaceName = spaceName;
     }
 
-    public List<Combo> getCombos() {
-        return combos;
+    public String getPic() {
+        return pic;
     }
 
-    public void setCombos(List<Combo> combos) {
-        this.combos = combos;
+    public void setPic(String pic) {
+        this.pic = pic;
+    }
+
+    public List<ComboBed> getComboBeds() {
+        return comboBeds;
+    }
+
+    public void setComboBeds(List<ComboBed> comboBeds) {
+        this.comboBeds = comboBeds;
     }
 }

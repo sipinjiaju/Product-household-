@@ -4,19 +4,50 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.qianfeng.sipinhome.space.dao.SpaceMapper">
 
-    <resultMap id="baseResult" type="com.qianfeng.sipinhome.space.dto.SpaceInspiration">
+    <resultMap id="baseResult" type="com.qianfeng.sipinhome.space.dto.SpaceInspiration1">
         <id property="spaceId" column="space_id" javaType="java.lang.Long"/>
         <result property="spaceName" column="space_name" javaType="java.lang.String"/>
+        <result property="pic" column="pic" javaType="java.lang.String"/>
         <collection property="combos" ofType="com.qianfeng.sipinhome.space.dto.Combo">
+            <result property="lvingroomId" column="lvingroom_id" javaType="java.lang.Integer"/>
             <result property="priceMin" column="price_min" javaType="java.lang.Integer"/>
             <result property="name" column="lving_goods_name" javaType="java.lang.String"/>
             <result property="script" column="script" javaType="java.lang.String"/>
+            <result property="pic1" column="pic1" javaType="java.lang.String"/>
         </collection>
     </resultMap>
-    <select id="query" resultMap="baseResult">
-        select lm.lving_middle_id,lm.price_min,lg.lving_goods_name,s.space_name,lm.script
+    <resultMap id="baseBedroom" type="com.qianfeng.sipinhome.space.dto.SpaceInspiration2">
+        <id property="spaceId" column="space_id" javaType="java.lang.Integer"/>
+        <result property="spaceName" column="space_name" javaType="java.lang.String"/>
+        <result property="pic" column="pic" javaType="java.lang.String"/>
+        <collection property="comboBeds" ofType="com.qianfeng.sipinhome.space.dto.ComboBed">
+            <result property="bedroomId" column="bedroom_id" javaType="java.lang.Integer"/>
+            <result property="priceMin" column="price_min" javaType="java.lang.Integer"/>
+            <result property="name" column="bed_goods_name" javaType="java.lang.String"/>
+            <result property="script" column="script" javaType="java.lang.String"/>
+            <result property="pic1" column="pic1" javaType="java.lang.String"/>
+        </collection>
+    </resultMap>
+    <select id="queryLivingById" resultMap="baseResult">
+        select lm.lving_middle_id,lm.price_min,lg.lving_goods_name,s.space_name,lm.script,lg.lvingroom_id,s.pic,lm.pic1
         from lving_middle lm join lving_goods lg join space s on
         lm.lving_goods_id = lg.lving_goods_id and lm.space_id = s.space_id
-        where lm.space_id = 1;
+        where lm.space_id = #{spaceId};
+    </select>
+    <select id="queryBedById" resultMap="baseBedroom">
+        select bm.bedmiddle_id,bm.price_min,bg.bed_goods_name,s.space_name,bm.script,bg.bedroom_id,s.pic,bm.pic1
+        from bed_middle bm join bed_goods bg join space s on
+        bm.bed_goods_id = bg.bed_goods_id and bm.space_id = s.space_id
+        where bm.space_id = #{spaceId};
+    </select>
+    <select id="queryLivingAll" resultMap="baseResult">
+        select lm.lving_middle_id,lm.price_min,lg.lving_goods_name,s.space_name,lm.script,lg.lvingroom_id,s.pic,lm.pic1
+        from lving_middle lm join lving_goods lg join space s on
+        lm.lving_goods_id = lg.lving_goods_id and lm.space_id = s.space_id;
+    </select>
+    <select id="queryBedAll" resultMap="baseBedroom">
+        select bm.bedmiddle_id,bm.price_min,bg.bed_goods_name,s.space_name,bm.script,bg.bedroom_id,s.pic,lm.pic1,bm.pic1
+        from bed_middle bm join bed_goods bg join space s on
+        bm.bed_goods_id = bg.bed_goods_id and bm.space_id = s.space_id;
     </select>
 </mapper>

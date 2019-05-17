@@ -1,25 +1,48 @@
 package com.qianfeng.sipinhome.space.controller;
 
-import com.qianfeng.sipinhome.space.dto.SpaceInspiration;
+import com.qianfeng.sipinhome.space.dto.SpaceInspiration1;
+import com.qianfeng.sipinhome.space.dto.SpaceInspiration2;
 import com.qianfeng.sipinhome.space.service.ISpaceService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/space")
 public class SpaceController {
 
     @Autowired
     private ISpaceService spaceService;
 
-    @RequestMapping("query")
+    @RequestMapping("/queryLivingById/{spaceId}")
     @ResponseBody
-    public List<SpaceInspiration> query(){
-        List<SpaceInspiration> spaceInspirations = spaceService.query();
+    public List<SpaceInspiration1> queryLivingById(@PathVariable("spaceId") int spaceId){
+        List<SpaceInspiration1> spaceInspirations = spaceService.queryLivingById(spaceId);
+        return spaceInspirations;
+    }
+
+    @RequestMapping("/queryLivingAll")
+    @ResponseBody
+    public List<SpaceInspiration1> queryLivingAll() {
+        List<SpaceInspiration1> spaceInspirations = spaceService.queryLivingAll();
+        return spaceInspirations;
+    }
+
+    @RequestMapping("/queryBedById/{spaceId}")
+    @ResponseBody
+    public List<SpaceInspiration2> queryBedById(@PathVariable("spaceId") int spaceId){
+        List<SpaceInspiration2> spaceInspirations = spaceService.queryBedById(spaceId);
+        return spaceInspirations;
+    }
+
+    @RequestMapping("/queryBedAll")
+    @ResponseBody
+    public List<SpaceInspiration2> queryBedAll() {
+        List<SpaceInspiration2> spaceInspirations = spaceService.queryBedAll();
         return spaceInspirations;
     }
 }

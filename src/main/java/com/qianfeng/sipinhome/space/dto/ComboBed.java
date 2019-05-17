@@ -1,10 +1,10 @@
 package com.qianfeng.sipinhome.space.dto;
 
-public class Combo {
+public class ComboBed {
     private int priceMin;
     private String name;
     private String script;
-    private int lvingroomId;
+    private int bedroomId;
     private String pic1;
 
     public int getPriceMin() {
@@ -31,12 +31,12 @@ public class Combo {
         this.script = script;
     }
 
-    public int getLvingroomId() {
-        return lvingroomId;
+    public int getBedroomId() {
+        return bedroomId;
     }
 
-    public void setLvingroomId(int lvingroomId) {
-        this.lvingroomId = lvingroomId;
+    public void setBedroomId(int bedroomId) {
+        this.bedroomId = bedroomId;
     }
 
     public String getPic1() {
